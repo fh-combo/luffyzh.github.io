@@ -4,9 +4,231 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/17840558?s=400&u=dca330fa9779fd4ba3eb3ddf9c726739cf53ec24&v=4" type="image/x-icon">
+  <link href="https://cdn.bootcss.com/bulma/0.7.1/css/bulma.min.css" rel="stylesheet">
+  <link href="./css/cards.css" rel="stylesheet">
   <title>周公子's Garden</title>
 </head>
 <body>
-  <p>fjsdklfjlsdf</p>
+  <!-- START NAV -->
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" target="_blank" href="https://github.com/luffyZh">
+          <span class="home-title">周公子's Garden</span>
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-active">
+            Home
+          </a>
+          <a class="navbar-item">
+            Examples
+          </a>
+          <a class="navbar-item">
+            Features
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Account
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Dashboard
+              </a>
+              <a class="navbar-item">
+                Profile
+              </a>
+              <a class="navbar-item">
+                Settings
+              </a>
+              <hr class="navbar-divider">
+              <div class="navbar-item">
+                Logout
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->
+  <div class="container">
+    <div id="flow">
+      <span class="flow-1"></span>
+      <span class="flow-2"></span>
+      <span class="flow-3"></span>
+    </div>
+    <div class="section">
+      <div class="box">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input class="input has-text-centered" type="search" placeholder="» » » » » » 查啥也没有 « « « « « «">
+          </div>
+          <div class="control">
+            <a id="search_btn" class="button is-info">搜索</a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="modal">
+        <div class="modal-background"></div>
+        <div style="position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%)" class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">不信邪是不是？</p>
+            <button class="delete close-modal" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            我都告诉你了，啥也没有，还点！<br/>
+            人与人之间能不能多一些真诚！
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button close-modal">知道了</button>
+          </footer>
+        </div>
+      </div>
+      <!-- Developers -->
+      <div class="row columns">
+        <div class="column is-one-third">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image">
+                <img style="height: 200px;" src="./images/react-best-input.png"
+                  alt="Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-96x96">
+                    <img src="./images/logo.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">
+                    <a target="_blank" href="https://luffyzh.github.io/react-best-input/">react-best-input</a>
+                  </p>
+                  <br />
+                  <p>
+                    <span class="title is-6">
+                      <a target="_blank" href="https://github.com/luffyZh/react-best-input/">@github</a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                A simple and best input component for react.
+                <div class="background-icon">
+                  <span class="icon-twitter"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image">
+                <img style="height: 200px;" src="./images/guideline.png" alt="Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-96x96">
+                    <img src="./images/logo.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">
+                    <a target="_blank" href="https://luffyzh.github.io/johvin-guideline-demo/">guideline</a>
+                  </p>
+                  <br />
+                  <p>
+                    <span class="title is-6">
+                        <a target="_blank" href="https://github.com/luffyZh/johvin-guideline-demo/">@github</a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                johvin-guideline-demo based on create-react-app for guideline the author is my mentor.
+                <div class="background-icon">
+                  <span class="icon-facebook"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image">
+                <img style="height: 200px;" src="./images/rc-async-component.png" alt="Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-96x96">
+                    <img src="./images/logo.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 no-padding">
+                    <a target="_blank" href="https://luffyzh.github.io/rc-async-component">rc-async-component</a>
+                  </p>
+                  <br />
+                  <p>
+                    <span class="title is-6">
+                        <a target="_blank" href="https://github.com/luffyZh/rc-async-component/">@github</a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="content">
+                A react async component for lazy load component.
+                <div class="background-icon">
+                  <span class="icon-barcode"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <div class="soc">
+          <a href="#">
+            <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p>
+          <strong>@Author</strong> by
+          <a href="https://github.com/luffyZh">Luffy Zhou</a>.
+          <br>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/bulma.js"></script>
 </body>
 </html>
